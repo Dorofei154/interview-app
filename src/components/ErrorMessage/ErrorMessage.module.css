@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1.3rem;
+  color: #555;
+  margin: 20px 0;
+}

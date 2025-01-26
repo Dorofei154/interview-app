@@ -1,0 +1,46 @@
+.selectContainer {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.select:hover {
+  border-color: #888;
+}
+
+.select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.selectContainer::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .selectContainer {
+    max-width: 100%;
+  }
+}
